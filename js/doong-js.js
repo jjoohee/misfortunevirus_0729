@@ -39,10 +39,10 @@ window.onscroll = function(){
 		else{d_textbox2.style.display = ""}
 
 		if (t > 1250) {d_textbox3.style.display = "block";}
-		else{d_textbox6.style.display = ""}
+		else{d_textbox3.style.display = ""}
 
 		if (t > 1800) {d_textbox4.style.display = "block";}
-		else{d_textbox6.style.display = ""}
+		else{d_textbox4.style.display = ""}
 
 		if (t > 2500) {d_textbox5.style.display = "block";}
 		else{d_textbox5.style.display = ""}
