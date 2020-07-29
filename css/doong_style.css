@@ -25,7 +25,7 @@ p{line-height: 27px; word-break: keep-all;}
 	left: calc(50% - 600px);
 	background: url('../imgdoong/background.gif');
 	overflow: hidden;
-	display: block;
+	display: none;
 }
 
 .cell1{
