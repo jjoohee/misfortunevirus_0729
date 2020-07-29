@@ -1,0 +1,327 @@
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{ color: white;}
+p{line-height: 27px; word-break: keep-all;}
+
+#moniter{width: 80px; height: 30px; background: black; color: white; position: fixed; top: 0; right: 0;}
+
+		@keyframes lo{
+				from{left: -100px;} to{left: 0px;}
+			}
+		@keyframes ro{
+				from{right: 100px;} to{right: 0px;}
+			}
+
+
+.start{
+	width: 1200px; height: 600px; position: absolute;
+	left: calc(50% - 600px);
+	overflow: hidden;
+}
+
+.warp{
+	width: 1200px; height: 3596px; position: absolute;
+	left: calc(50% - 600px);
+	background: url('../imgdoong/background.gif');
+	overflow: hidden;
+	display: block;
+}
+
+.cell1{
+	position: absolute;
+	left: calc(50% - 34px);
+	top: 325px;
+
+}
+
+#cell{
+	filter: grayscale(100%);
+}
+
+#cell:hover{
+	width: 80px;
+	left: calc(50% - 40px);
+	top: 320px;
+	cursor:pointer;
+}
+
+/*이미지 css*/
+
+#cell2:{
+	filter: brightness(60%);
+}
+
+#back1{
+	position: absolute;
+	left: -10px;
+	top: -20px;
+
+}
+
+#back2{
+	position: absolute;
+	right: -5px;
+	top: 860px;
+
+}
+
+#back3{
+	position: absolute;
+	bottom: 0px;
+	left: -15px;
+
+}
+
+
+#tree1{
+	position: absolute;
+	left: -63px; top: -3px; 
+	transition: all 2s; transform: rotateY(10deg);
+	animation: treemove 2s infinite linear alternate;
+}
+
+#tree1_1{
+	position: absolute;
+	right: -63px; top: -3px;
+	animation: treemove-e 2s infinite linear alternate;
+	}
+
+@keyframes treemove { 
+				to {transform: rotate(10deg); position: absolute; z-index: 0;}
+				from{transform: rotate(0deg); position: absolute; z-index: 0;}
+			}
+
+@keyframes treemove-e { 
+				to {transform: rotate(-10deg); position: absolute; z-index: 0;}
+				from{transform: rotate(0deg); position: absolute; z-index: 0;}
+			}
+
+#bigcell{
+	position: absolute;
+	left: 278px;
+	top: 310px;
+	cursor:pointer;
+	transition: all 0.5s;
+}
+
+#bigcell:hover{
+	opacity: 50%;
+	}
+
+#bigcell2{
+	position: absolute;
+	left: 84px;
+	top: 1072px;
+}
+
+#circle1{
+	position: absolute;
+	left: -280px;
+	top: 950px;
+	animation:io 8s infinite linear;
+}
+
+@keyframes io { 
+				to {transform: rotate(-0deg); position: absolute; z-index: 0;}
+				from{transform: rotate(-360deg); position: absolute; z-index: 0;}
+			} 
+
+#circle1_1{
+	position: absolute;
+	right: -280px;
+	top: 950px;
+	animation:lo 8s infinite linear;
+}
+
+@keyframes lo { 
+				to {transform: rotate(0deg); position: absolute; z-index: 0;}
+				from{transform: rotate(360deg); position: absolute; z-index: 0;}
+			} 
+
+#human{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 1330px;
+	cursor:pointer;
+
+}
+
+#human1{
+	position: absolute;
+	left: calc(50% - 311.5px);
+	top: 1330px;
+	cursor:pointer;
+}
+
+#human{
+	filter: brightness(50%);
+	transition: all 0.5s;
+
+}
+#human:hover{
+	filter: brightness(100%);
+
+}
+
+#eyes{
+	position: absolute;
+	left: calc(50% - 102px);
+	top: 1490px;
+	display: none;
+
+}
+
+#eye_circle{
+	position: absolute;
+	width:22px; height:22px;
+	left: 520px; top: 2160px;
+	background: black;
+	border:1px solid #B42840;
+	border-radius:75px;
+	animation: so 5s linear infinite alternate;
+}
+
+#eye_circle2{
+	position: absolute;
+	width:22px; height:22px;
+	right: 520px; top: 2160px;
+	background: black;
+	border:1px solid #B42840;
+	border-radius:75px;
+	animation: so 5s linear infinite alternate;
+}
+
+@keyframes so { 
+				to {transform: translateX(-65%); position: absolute; z-index: 0;}
+				from {transform: translateX(65%); position: absolute; z-index: 0;}
+			} 
+
+#circle2{
+	position: absolute;
+	left: -280px;
+	top: 2250px;
+	animation:lo 8s infinite linear;
+
+}
+
+#circle2_1{
+	position: absolute;
+	right: -280px;
+	top: 2250px;
+	animation:io 8s infinite linear;
+}
+
+#hand1{
+	position: absolute;
+	right: 200px;
+	top: 2160px;
+
+}
+#hand2{
+	position: absolute;
+	right: -50px;
+	top: 1980px;
+
+}
+#hand3{
+	position: absolute;
+	left: -50px;
+	top: 1840px;
+	/*좌우반전*/
+	 -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+
+}
+
+#tree2{
+	position: absolute;
+	left: -40px; top: 1450px; 
+}
+
+#tree2_1{
+	position: absolute;
+	right: -40px; top: 1450px; 
+}
+
+
+#scull{
+	position: absolute;
+	left: calc(50% - 583px);
+	bottom: 390px;
+}
+
+#tree3{
+	position: absolute;
+	left: -63px; bottom: -3px;
+	animation: treemove-e 2s infinite linear alternate;
+}
+
+#tree3_1{
+	position: absolute;
+	right: -63px; bottom: -3px; 
+	animation: treemove 2s infinite linear alternate;
+}
+
+/*텍스트 css*/
+
+.textbox{
+	position: absolute;
+	width: 500px; height: 200px;
+	background: black;
+	padding: 20px; 
+	left: calc(50% - 250px);
+	border: 1px solid white;
+	display: none;
+}
+
+.maintext{
+	width: 400px; height: 100px;
+	font-size: 16px; left: calc(50% - 200px);
+	top: 60px;
+	position: absolute;
+}
+
+.next_botton{
+	font-size: 16px;
+	color: white;
+	padding: 5px;
+	right: 20px; bottom: 20px;
+	position: absolute;
+	line-height: 15px;
+	opacity: 50%;
+	cursor:pointer;
+}
+
+.next_botton:hover{
+	opacity: 100%;
+}
+
+#d_textbox1{
+	top: 200px;
+}
+
+#d_textbox2{
+	top: 800px;
+}
+
+#d_textbox3{
+	top: 1450px;
+}
+
+#d_textbox4{
+	top: 2000px;
+
+}
+
+#d_textbox5{
+	top: 2600px;
+}
+
+#d_textbox6{
+	top: 3200px;
+}

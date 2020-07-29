@@ -1,0 +1,35 @@
+
+body, div, h1, p{margin: 0;}
+body{ position: relative; background: black;}
+h1, p{ color: white;}
+p{line-height: 27px; word-break: keep-all;}
+
+
+.warp{
+	width: 1200px; position: absolute;
+	left: calc(50% - 600px); background: black;
+}
+
+#main-img{
+	width: 1200px; position: absolute;
+	left: calc(50% - 600px);
+}
+
+#doong-img{
+	width: 586px; position: absolute;
+	right: 0px; top: 273px; filter: brightness(50%);
+	transition: all 0.5s;
+}
+#doong-img:hover{
+	filter: brightness(100%);
+}
+
+#battle-img{
+	width:626px; position: absolute; 
+	left: 0px; top: 1429px;
+	filter: brightness(50%);
+	transition: all 0.5s;
+}
+#battle-img:hover{
+	filter: brightness(100%);
+}
